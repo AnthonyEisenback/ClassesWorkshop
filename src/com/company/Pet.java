@@ -1,15 +1,14 @@
 package com.company;
 
-import java.lang.reflect.Method;
-
 public class Pet {
+
     private String ownerName;
     private String petName;
     private String homeAddress;
     private int age;
     private char gender;
 
-    public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {
+    public Pet(int age) {
         this.ownerName = ownerName;
         this.petName = petName;
         this.homeAddress = homeAddress;
@@ -57,11 +56,8 @@ public class Pet {
         this.gender = gender;
     }
 
-
-    protected String makeSound(){
+    protected String makeSound() {
 
         return "Pets make no sound.";
     }
-
-
 }

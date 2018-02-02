@@ -2,17 +2,23 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Dog extends Pet{
+public class Dog extends Pet {
+
     private boolean likesWalks;
     private boolean canFetch;
     private String coatType;
-    Scanner input = new Scanner(System.in);
+    private Scanner input = new Scanner(System.in);
 
     public Dog(String ownerName, String petName, String homeAddress, int age, char gender) {
-        super(ownerName, petName, homeAddress, age, gender);
-
-
+        super(age);
     }
+
+    //    public Dog() {
+//        System.out.println("What is your dog's name?");
+//        setPetName(input.nextLine());
+//        System.out.println("Does " + getPetName() + " like to take walks? True or False");
+//        setLikesWalks(input.nextBoolean());
+//    }
 
     public boolean isLikesWalks() {
         return likesWalks;
@@ -37,16 +43,11 @@ public class Dog extends Pet{
     public void setCoatType(String coatType) {
         this.coatType = coatType;
     }
-//
-//    public Dog(boolean likesWalks, boolean canFetch, String coatType) {
-//        this.likesWalks = likesWalks;
-//        this.canFetch = canFetch;
-//        this.coatType = coatType;
-
-    }
 
     @Override
     protected String makeSound() {
-        return super.makeSound() + "but dogs Bark";
+        return super.makeSound() + "BUT dogs bark";
+
+
     }
 }

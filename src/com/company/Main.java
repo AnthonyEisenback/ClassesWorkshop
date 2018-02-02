@@ -1,21 +1,27 @@
 package com.company;
-
 public class Main {
 
-    private String MyString;
 
-    protected String lotsOfStrings;
-
-    public String lastString;
-
-    String anotherString;
 
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        System.out.println(dog.makeSound());
+//
+//        Dog dog = new Dog();
 
-//        Cat cat = new Cat(true, "Brown", "f", );
+//        System.out.println(dog.makeSound());
 
-	// write your code here
+        Cat cat = new Cat(4);
+
+        System.out.println(cat.makeSound());
+        System.out.println(cat.getGender());
+        System.out.println(cat.getAge());
+
+
+
+
+
+
+
+
     }
+
 }
