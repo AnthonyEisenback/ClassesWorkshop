@@ -8,6 +8,9 @@ public class Pet {
     private int age;
     private char gender;
 
+    public Pet() {
+    }
+
     public Pet(int age) {
         this.ownerName = ownerName;
         this.petName = petName;

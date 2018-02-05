@@ -13,12 +13,12 @@ public class Dog extends Pet {
         super(age);
     }
 
-    //    public Dog() {
-//        System.out.println("What is your dog's name?");
-//        setPetName(input.nextLine());
-//        System.out.println("Does " + getPetName() + " like to take walks? True or False");
-//        setLikesWalks(input.nextBoolean());
-//    }
+        public Dog() {
+        System.out.println("What is your dog's name?");
+        setPetName(input.nextLine());
+        System.out.println("Does " + getPetName() + " like to take walks? True or False");
+        setLikesWalks(input.nextBoolean());
+    }
 
     public boolean isLikesWalks() {
         return likesWalks;
@@ -47,7 +47,8 @@ public class Dog extends Pet {
     @Override
     protected String makeSound() {
         return super.makeSound() + "BUT dogs bark";
-
-
+    }
+    protected String dogYears() {
+        return super.getPetName() + " is " +super.getAge() + "in human years and " + (super.getAge() * 7);
     }
 }
